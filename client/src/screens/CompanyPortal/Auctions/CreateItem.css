@@ -1,0 +1,63 @@
+.createItem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ffffff; /* Sky Blue Background */
+  margin-top: -50px;
+}
+
+.item__title {
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #091638;
+}
+
+.item__container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid rgb(161, 158, 158);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.item__container > h1 {
+  font-family: "Arial", sans-serif;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.item__container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.item__CreateButton {
+  background-color: #2351ce;
+  height: 40px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #071949;
+  cursor: pointer;
+  color: #071949;
+  font-family: "Arial", sans-serif;
+}
+
+.item__CreateButton:hover {
+  background-color: #ff0000; /* Red on hover */
+  border-color: #ff0000;
+}

@@ -1,0 +1,35 @@
+const express = require("express");
+// const bodyParser = require('body-parser')
+const mongoose = require("mongoose");
+const dotenv = require("dotenv").config();
+const cors = require("cors");
+const app = express();
+const authController = require("./controllers/authController");
+const propertyController = require("./controllers/propertyController");
+const uploadController = require("./controllers/uploadController");
+const blogController = require("./controllers/blogController"); // Adjust the path accordingly
+const auctionController = require("./controllers/auctionController"); // Adjust the path accordingly
+
+// Use the blog routes
+// db connecting
+mongoose.set("strictQuery", false);
+mongoose.connect(process.env.MONGO_URL, () => console.log("Db is connected"));
+var bodyParser = require("body-parser");
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
+// middlewares
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use("/images", express.static("/backend/images"));
+
+app.use("/auth", authController);
+app.use("/property", propertyController);
+app.use("/upload", uploadController);
+app.use("/blogs", blogController);
+// app.use("/card", auctionController);
+
+
+// starting server
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log("Server has been started"));

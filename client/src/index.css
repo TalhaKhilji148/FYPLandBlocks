@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-bg-welcome {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      rgb(147, 133, 227) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, rgb(33, 77, 208) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(92, 45, 62) 0, transparent 50%);
+}
+
+.gradient-bg-services {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.gradient-bg-transactions {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 150%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.eth-card {
+  background-color: #a099ff;
+  background-image: radial-gradient(
+      at 83% 67%,
+      rgb(111, 230, 246) 0,
+      transparent 58%
+    ),
+    radial-gradient(at 67% 20%, rgba(8, 1, 2, 0) 0, transparent 59%),
+    radial-gradient(at 88% 35%, rgba(2, 8, 20, 0) 0, transparent 50%),
+    radial-gradient(at 31% 91%, rgba(15, 12, 12, 0) 0, transparent 52%),
+    radial-gradient(at 27% 71%, rgba(12, 2, 6, 0) 0, transparent 49%),
+    radial-gradient(at 74% 89%, rgba(15, 9, 2, 0) 0, transparent 51%),
+    radial-gradient(at 53% 75%, rgba(48, 59, 58, 0) 0, transparent 45%);
+}
+.welcome-back {
+  background-image: url("https://media.istockphoto.com/id/1213546146/vector/dark-blue-blockchain-technology-background-with-dots-and-hexagons.jpg?s=612x612&w=0&k=20&c=rti-H41fg5bKLzU5K7AQgqlwiw0T3viSwCFqa3x-lpo=");
+}
+.welcome-back2 {
+  /* background-color: rgb(255, 255, 255); */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/536/581/original/dark-blue-smart-blurred-pattern-elegant-bright-illustration-with-gradient-background-for-cell-phones-vector.jpg");
+}
+
+.text-gradient {
+  background-color: #fff;
+  background-image: radial-gradient(
+      at 4% 36%,
+      rgb(255, 255, 255) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 100% 60%, rgba(118, 18, 18, 0.468) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
